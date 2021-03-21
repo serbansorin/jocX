@@ -2,21 +2,19 @@
 
 
 ### Erou VS Monstru
+As fii vrut sa pun si Enuntul Jocului, dar pentru protectia anumitor date si din respect pentru cei care au facut enuntul qm abandonat initiativa momentan.
 
 
-The game was made during one night, I still can't remember exactly.
-The original plan 2 files config and play would be the only files while in index.php, I would instantiate the 2 caracters and call a static function as the play engine.
-WHY I DIDN'T DO IT LIKE I PLANNED TO? Well one of the assignment was to leave room in case the would evolve. So I made one too many classes.
-
-I put all their special powers, gifts and stats, like health,strength, attack,defense,luck,etc, in one file named config.
-
-Eroul ataca Monstrul,
-
-Game's config in Models/config.php; returns as an array
-
-TODO: Move action into a static function
-TODO: Remove all comments; make new ones
-TODO: Move special gifts and special move // transform into functions
+// Proiect care a devenit didactic dintr-un test care l-am dat mai de mult si care initial am facut la el 2-3 ore
+// Pot spune ca sunt 2-3 lucruri care merita imbunatatite la enunt, insa cine a avut ideea cu jocul, nu stat prea mult pe ganduri (pana sa se apuce de el) ---LOL
 
 
-TODO: MOVE THE ACTION between play class and caracter class.
+// Scopul a fost un joc/ o batalie dintre Ordeus si Monster care au anumite caracteristici
+// Enuntul nu a fost prea clar/ Health impreuna cu alte caracteristici sunt influentate de noroc.
+// Unde nu se leaga este Health, care nu ar trebui sa varieze si totusi enuntul este altul.
+
+// De asemenea totul tre facut in PHP care nu are interactiuni cu clientul ?!
+
+// Sunt clase care le am lasat special pentru ca am vrut ca totusi ele sa aiba la un moment dat un parinte si niste diferente majore
+// Momentan sunt la fel si al 2lea motiv este folosirea unei metode statice de a alege jucatorul
+// "Un joc care se poate extinde sa aibe sute de jucatori si atunci apelarea claselor direct ar fii o nebunie curata :)))))"
