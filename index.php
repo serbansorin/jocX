@@ -1,37 +1,38 @@
+// Proiect care a devenit didactic; Proiect care initial am avut 2-3 ore
+// Scopul a fost un joc/ o batalie dintre Ordeus si Monster care au anumite caracteristici
+// Enuntul nu a fost prea clar/ Health impreuna cu alte caracteristici sunt influentate de noroc.
+// Unde nu se leaga este Health, care nu ar trebui sa varieze si totusi enuntul este altul.
+
+// De asemenea totul tre facut in PHP care nu are interactiuni cu clientul ?!
+
+// Sunt clase care le am lasat special pentru ca am vrut ca totusi ele sa aiba la un moment dat un parinte si niste diferente majore
+// Momentan sunt la fel si al 2lea motiv este folosirea unei metode statice de a alege jucatorul
+// "Un joc care se poate extinde sa aibe sute de jucatori si atunci apelarea claselor direct ar fii o nebunie curata :)))))"
+
 <?php
 session_start();
 require_once __DIR__ . '/vendor/autoload.php';
 
-//AM FOLOSIT STATIC METHOD -->> CARACTER::SELECT
-//
-//$heroes = include __DIR__ . '/Models/config.php';
-//
-//
-//$Ordeus = new Models\Ordeus($heroes['Ordeus']);
-//$Monster = new Models\Monster($heroes['Monster']);
+/*Final Print
 
+game::play();
+cout>>> Select Player;  Momentan am un singur Hero
+
+
+
+
+*/
+// O
 $Ordeus = Models\Caracter::select('Ordeus');
 $Monster = Models\Caracter::select('Monster');
 
-//random de fiecare data la health??? Mai sunt cateva lucruri care nu sunt prea clare.
+// Q: random de fiecare data la health? Mai sunt cateva lucruri care nu sunt prea clare.
 // health trebuie sa fie static?!
 $Ordeus->play();
 $Monster->play();
 
 
-/*
- * 
- * 
- * TODO PUT IT IN A CLASS
- */
-//
-//DACA AS FII ADAUGAT UN BUTON, AM SCRIS CU SESSION 
-//
-//Nu trebuia neaparat sa folosesc session;
-$damageO = 0;
-$damageM = 0;
-//$damageO =& $_SESSION['damageMonster'];
-//$damageM =& $_SESSION['damageOrdeus'];
+
 
 for ($x = 0; $x < 20; $x++) {
    
